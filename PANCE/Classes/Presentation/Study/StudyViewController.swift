@@ -43,7 +43,6 @@ final class StudyViewController: UIViewController {
         mainView
             .settingsButton.rx.tap
             .subscribe(onNext: { [weak self] in
-                fatalError("init")
                 self?.settingsTapped()
             })
             .disposed(by: disposeBag)
